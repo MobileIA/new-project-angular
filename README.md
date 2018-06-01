@@ -95,6 +95,25 @@ imports: [
 ],
 ```
 
+# Donde guardar las constantes de la aplicación:
+1. Dentro de la carpeta: "src/environments/", aqui se pueden crear los diferentes entornos.
+```js
+export const environment = {
+    production: true,
+    apiKey: "45237623827632"
+};
+```
+2. Como utilizarlo en la aplicación:
+```js
+import {environment} from '../../environments/environment';
+
+getHostURL(): string {
+    return environment.apiKey;
+}
+```
+
+
+
 
 # Como crear un nuevo servicio:
 1. Ejecutar siguiente comando:
