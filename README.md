@@ -170,5 +170,25 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 ng build --prod
 ```
 
+# Como crear una libreria publica para que pueda ser usada por cualquier proyecto:
+1. Generar modulo de libreria:
+```bash
+ng generate library my-lib
+```
+2. Generar todos los componentes y codigo de la libreria.
+3. Compilar libreria:
+```bash
+ng build my-lib --prod
+```
+4. Entrar a la carpeta:
+```bash
+cd dist/my-lib
+```
+5. Si no tienes un usuario creado en NPM, crearlo: https://docs.npmjs.com/getting-started/publishing-npm-packages
+6. Publicar libreria:
+```bash
+npm publish --access public
+```
+
 # Recursos disponibles:
 1. Plataforma para generar documentación de un proyecto Angular facilmente: https://compodoc.github.io/compodoc/
