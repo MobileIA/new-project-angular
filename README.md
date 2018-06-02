@@ -22,7 +22,11 @@ ng generate component name-of-component
 ```
 
 # Como usar Routing:
-1. Abrir archivo: app.module.ts
+1. Generar modulo para manejar las rutas:
+```bash
+ng generate module app-routing --flat --module=app
+```
+1. Abrir archivo: app-routing.module.ts
 ```js
 // Agregar import arriba de todo
 import { RouterModule, Routes } from '@angular/router';
