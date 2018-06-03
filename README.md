@@ -80,6 +80,10 @@ export class EditComponent implements OnInit {
   }
 }
 ```
+6. Agregar link en el HTLM:
+```html
+<a routerLink="/dashboard">Texto del link</a>
+```
 
 # Como agregar Bootstrap:
 1. Descargamos los archivos desde la web: https://getbootstrap.com/docs/4.1/getting-started/download/
