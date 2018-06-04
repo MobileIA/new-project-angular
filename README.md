@@ -198,5 +198,8 @@ cd dist/my-lib
 npm publish --access public
 ```
 
+# Librerias utiles:
+1. SweetAlert2: Mensajes de alerta, para confirmar eliminación, mensajes de exito, etc: https://sweetalert2.github.io/
+
 # Recursos disponibles:
 1. Plataforma para generar documentación de un proyecto Angular facilmente: https://compodoc.github.io/compodoc/
