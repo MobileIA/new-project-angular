@@ -188,6 +188,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
     "src/styles.scss"
 ],
 ```
+4. Volver a servir la aplicación: ng serve
 
 
 # Compilar proyecto:
