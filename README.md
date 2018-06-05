@@ -171,6 +171,24 @@ imports: [
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 ```
 
+# Como importar SCSS Global:
+1. Abrir archivo angular.json
+2. Incluir para que procese los SCSS:
+```json
+"schematics": {
+    "@schematics/angular:component": {
+        "styleext": "scss"
+    }
+},
+```
+3. Incluir los SCSS globales:
+```json
+"styles": [
+    "projects/base/src/assets/css/global-style.scss",
+    "src/styles.scss"
+],
+```
+
 
 # Compilar proyecto:
 1. Ejecutar siguiente comando:
