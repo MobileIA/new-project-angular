@@ -197,6 +197,12 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 ng build --prod
 ```
 
+# Servir proyecto:
+1. Para ejecutar la aplicación desde el navegador, gener en cuenta que para proyectos grandes, es necesario trabajar con diferentes proyectos internos:
+```bash
+ng serve --project=name_of_project --open
+```
+
 # Como crear una libreria publica para que pueda ser usada por cualquier proyecto:
 1. Generar modulo de libreria:
 ```bash
