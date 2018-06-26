@@ -203,6 +203,17 @@ ng build --prod
 ng serve --project=name_of_project --open
 ```
 
+# Proyecto grandes:
+1. Crear una libreria Base, donde se almacenen todas las caracteristicas que usaran los diferentes modulos.
+2. Crear una aplicación/proyecto dentro:
+```bash
+ng generate application name_of_project
+```
+3. Servir proyecto especifico:
+```bash
+ng serve --project=name_of_project
+```
+
 # Como crear una libreria publica para que pueda ser usada por cualquier proyecto:
 1. Generar modulo de libreria:
 ```bash
