@@ -19,6 +19,8 @@ ng serve --open
 1. Ejecutar siguiente comando:
 ```bash
 ng generate component name-of-component
+// Como generar dentro de un proyecto interno
+ng g component name_of_component --project=name_of_project
 ```
 
 # Como usar Routing:
@@ -198,7 +200,7 @@ ng build --prod
 ```
 
 # Servir proyecto:
-1. Para ejecutar la aplicación desde el navegador, gener en cuenta que para proyectos grandes, es necesario trabajar con diferentes proyectos internos:
+1. Para ejecutar la aplicación desde el navegador, tener en cuenta que para proyectos grandes, es necesario trabajar con diferentes proyectos internos:
 ```bash
 ng serve --project=name_of_project --open
 ```
