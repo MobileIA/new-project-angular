@@ -39,6 +39,7 @@ import { RouterModule, Routes } from '@angular/router';
 2. Crear constante para almacenar las rutas:
 ```js
 const routes:Routes = [
+    { path: '', redirectTo: '/index', pathMatch: 'full' },
   { 
     path: 'create', 
     component: CreateComponent 
