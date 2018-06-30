@@ -14,6 +14,9 @@ ng new name-of-project
 cd name-of-project
 ng serve --open
 ```
+4. Integrar librerias de MobileIA:
+- https://github.com/MobileIA/mia-core-angular
+- https://github.com/MobileIA/mia-authentication-angulario
 
 # Como crear un nuevo componente:
 1. Ejecutar siguiente comando:
@@ -93,6 +96,39 @@ export class EditComponent implements OnInit {
 3. Agregamos enlace al CSS en el archivo "index.html"
 ```html
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+```
+
+# Como Agregar NG-Bootstrap 4:
+1. Instalamos libreria:
+```bash
+npm install --save @ng-bootstrap/ng-bootstrap
+```
+2. Importar modulo:
+```js
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+```
+3. Ejemplo en modulo padre:
+```js
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgbModule.forRoot(), ...],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+```
+4. Ejemplo en otro modulo:
+```js
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  declarations: [OtherComponent, ...],
+  imports: [NgbModule, ...]
+})
+export class OtherModule {
+}
 ```
 
 # Activar modulo para realizar peticiones HTTP:
