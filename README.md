@@ -122,6 +122,13 @@ export class AppModule {
 4. Ejemplo en otro modulo:
 ```js
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+5. Descargar Bootstrap 4, agregarlo a la carpeta Assets y Agregar CSS en el proyecto:
+```js
+"styles": [
+    "projects/mobileia/layout-elite/src/assets/bootstrap-4.1.1-dist/css/bootstrap.min.css",
+    "src/styles.css"
+],
+```
 
 @NgModule({
   declarations: [OtherComponent, ...],
