@@ -270,6 +270,14 @@ ng generate library my-lib
 ```bash
 ng build my-lib --prod
 ```
+3. Para crear libreria con Assets, abrir archivo package.json y generar un nuevo tipo de build:
+```js
+"build2": "ng build @mobileia/name_of_library --prod && cp -R projects/mobileia/name_of_library/src/assets/ dist/mobileia/name_of_library/assets/",
+```
+Ejecutar funcion:
+```bash
+npm run build2
+```
 4. Entrar a la carpeta:
 ```bash
 cd dist/my-lib
