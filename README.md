@@ -17,6 +17,7 @@ ng serve --open
 4. Integrar librerias de MobileIA:
 - https://github.com/MobileIA/mia-core-angular
 - https://github.com/MobileIA/mia-authentication-angulario
+- https://github.com/MobileIA/mia-layout-elite-angular
 
 # Como crear un nuevo componente:
 1. Ejecutar siguiente comando:
