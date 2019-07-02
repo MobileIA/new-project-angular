@@ -294,6 +294,7 @@ npm publish --access public
 2. MobileIA Core: Contiene clases y helpers que se usan en todos los proyectos: https://github.com/MobileIA/mia-core-angular
 3. MobileIA Authentication: Libreria para implementar login, registro con MobileIA Lab. En simple pasos: https://github.com/MobileIA/mia-authentication-angulario
 4. NgxScrollTo: Libreria para implementar scroll suave: https://github.com/nicky-lenaers/ngx-scroll-to#readme
+5. Ngx-Moment: Libreria para manejar fechas: https://github.com/urish/ngx-moment
 
 # Recursos disponibles:
 1. Plataforma para generar documentación de un proyecto Angular facilmente: https://compodoc.github.io/compodoc/
