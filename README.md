@@ -295,6 +295,7 @@ npm publish --access public
 3. MobileIA Authentication: Libreria para implementar login, registro con MobileIA Lab. En simple pasos: https://github.com/MobileIA/mia-authentication-angulario
 4. NgxScrollTo: Libreria para implementar scroll suave: https://github.com/nicky-lenaers/ngx-scroll-to#readme
 5. Ngx-Moment: Libreria para manejar fechas: https://github.com/urish/ngx-moment
+6. Ng-InViewport: Libreria para detectar cuando un elemento html se encuentra visible dentro del scroll: https://github.com/k3nsei/ng-in-viewport
 
 # Recursos disponibles:
 1. Plataforma para generar documentación de un proyecto Angular facilmente: https://compodoc.github.io/compodoc/
