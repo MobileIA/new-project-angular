@@ -62,6 +62,12 @@ imports: [
     RouterModule.forRoot(routes)
 ],
 ```
+Que al cambiar de pagina, vuelva el scroll al top:
+```js
+imports: [
+  RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
+],
+```
 4. Agregar en el archivo: "app.component.html", que va a representar donde se cargaran los componentes:
 ```html
 <div>
