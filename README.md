@@ -295,6 +295,17 @@ cd dist/my-lib
 npm publish --access public
 ```
 
+# Implementar Sitemap SSR en App Engine:
+1. Abrir archivo server.ts
+2. Agregar codigo de sitemap:
+```ts
+app.get('/sitemap.xml', function(req, res) {
+  res.header('Content-Type', 'application/xml');
+  let indexSitemap = '<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>http://elegimejor.net/sitemap.xml/pages</loc></sitemap><sitemap><loc>http://elegimejor.net/sitemap.xml/blog</loc></sitemap><sitemap><loc>http://elegimejor.net/sitemap.xml/cartilla/specialities</loc></sitemap><sitemap><loc>http://elegimejor.net/sitemap.xml/cartilla/entities</loc></sitemap><sitemap><loc>http://elegimejor.net/sitemap.xml/cartilla/companies</loc></sitemap></sitemapindex>';
+  res.send(indexSitemap);
+});
+```
+
 # Librerias utiles:
 1. SweetAlert2: Mensajes de alerta, para confirmar eliminación, mensajes de exito, etc: https://sweetalert2.github.io/
 2. MobileIA Core: Contiene clases y helpers que se usan en todos los proyectos: https://github.com/MobileIA/mia-core-angular
