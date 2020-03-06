@@ -243,6 +243,22 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 ```
 4. Volver a servir la aplicación: ng serve
 
+# Agregar Robots.txt:
+1. Crear archivo robots.txt en la carpeta src:
+```txt
+User-agent: *
+Disallow:
+Sitemap: https://misitio.com/sitemap.xml
+```
+2. Abrir archivo angular.json, e incluir path del archivo:
+```ts
+"assets": [
+  "src/robots.txt",
+  "src/favicon.ico",
+  "src/assets"
+],
+```
+
 
 # Compilar proyecto:
 1. Ejecutar siguiente comando:
