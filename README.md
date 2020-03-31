@@ -224,6 +224,16 @@ imports: [
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 ```
 
+# Como detectar que se toco enter en un campo:
+```html
+<input (keydown.enter)="onKeydown($event)">
+```
+```ts
+onKeydown(event) {
+  console.log(event);
+}
+```
+
 # Como importar SCSS Global:
 1. Abrir archivo angular.json
 2. Incluir para que procese los SCSS:
