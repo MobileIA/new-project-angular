@@ -269,6 +269,29 @@ Sitemap: https://misitio.com/sitemap.xml
 ],
 ```
 
+# Crear modulo
+1. Crear modulo con Routing:
+```bash
+ng generate module modules/customers --route customers --module app.module
+```
+2. Agregar routes:
+```ts
+const routes: Routes = [
+  {
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule)
+  }
+];
+```
+B. Crear modulo sin Routing:
+```bash
+ng generate module modules/core
+```
+
 
 # Compilar proyecto:
 1. Ejecutar siguiente comando:
