@@ -319,6 +319,8 @@ ng serve --project=name_of_project
 # Como crear una libreria publica para que pueda ser usada por cualquier proyecto:
 1. Generar modulo de libreria:
 ```bash
+ng new my-workspace --create-application=false
+cd my-workspace
 ng generate library my-lib
 ```
 2. Generar todos los componentes y codigo de la libreria.
